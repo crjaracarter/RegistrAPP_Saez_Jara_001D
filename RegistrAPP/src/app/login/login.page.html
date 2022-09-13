@@ -14,7 +14,7 @@
 <ion-content>
   <ion-content>
     <ion-card-header>
-      <ion-card-title>Login</ion-card-title>
+      <ion-card-title>Inicio Sesion</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <form [formGroup]="formularioLogin">
@@ -28,7 +28,7 @@
         </ion-item>
       </form>
       <br>
-      <ion-button (click)="ingresar()">
+      <ion-button (click)="ingresar()" [routerLink]="['/home']">
         Ingresar
       </ion-button>
       <br>
