@@ -7,20 +7,24 @@
         color="primary"
         mode="ios"></ion-back-button>
     </ion-buttons>
+    
     <ion-title>Registro Asistencia</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
+<ion-content class="background">
+  <ion-card class="centrar">
+    <img src="assets/img/registroapplogov1chico.png">
+    </ion-card>
+  <ion-card class="background" >
     <ion-card-header>
-      <ion-card-title>Registro de asistencia</ion-card-title>
+      <ion-card-title class="titulo">Registro de asistencia</ion-card-title>
     </ion-card-header>
   
-    <ion-card-content>
+    <ion-card-content class="parrafo">
       En este apartado usted podra registrar su asistencia a clases de manera remota, solo debe permitir el uso de su camara a 
       la aplicacion y escanear el codigo QR que presente el profesor
     </ion-card-content>
   </ion-card>
-  <ion-button expand="block" fill="outline">Registrar Asistencia</ion-button>
+  <ion-button color="success" expand="block" [routerLink]="['/home']" >Registrar Asistencia</ion-button>
 </ion-content>
