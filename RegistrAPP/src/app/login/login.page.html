@@ -1,6 +1,13 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>login</ion-title>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/"
+        text="Volver"
+        color="primary"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inicio Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -23,6 +30,10 @@
       <br>
       <ion-button (click)="ingresar()">
         Ingresar
+      </ion-button>
+      <br>
+      <ion-button (click)="restablecer()">
+        Restablecer Contraseña
       </ion-button>
 
     </ion-card-content>
