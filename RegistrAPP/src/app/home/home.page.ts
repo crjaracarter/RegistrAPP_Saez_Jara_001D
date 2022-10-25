@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,8 @@ import { MenuController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(private menu: MenuController) { }
+  constructor(private menu: MenuController,
+    private navController: NavController) { }
 
   openFirst() {
     this.menu.enable(true, 'first');
@@ -17,6 +19,11 @@ export class HomePage {
 
   openEnd() {
     this.menu.open('end');
+  }
+
+  logout(){
+    localStorage.removeItem("ingresado");
+    this.navController.navigateRoot('login');
   }
 
   openCustom() {

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/"
+        text="Volver"
+        color="primary"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>API de Feriados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col *ngFor = " let feriado of feriados">
+        <ion-card class="background">
+          <ion-card-header>
+            <ion-card-subtitle>{{feriado.title}}</ion-card-subtitle>
+            <ion-card-subtitle>{{feriado.date}}</ion-card-subtitle>
+            <ion-card-subtitle>{{feriado.type}}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

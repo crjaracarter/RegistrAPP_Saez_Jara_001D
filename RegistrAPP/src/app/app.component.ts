@@ -17,16 +17,6 @@ export class AppComponent {
 
   componentes : Componente[] = [
     {
-      icon: 'person-outline',
-      name: 'Iniciar Sesion',
-      redirecTo: '/login'
-    },
-    {
-      icon: 'person-add-outline',
-      name: 'Registrarse',
-      redirecTo: '/registro'
-    },
-    {
       icon: 'storefront-outline',
       name: 'Inicio',
       redirecTo: '/home'
@@ -37,9 +27,14 @@ export class AppComponent {
       redirecTo: '/asistencia'
     },
     {
-      icon: 'close-circle-outline',
-      name: 'Cerrar Sesion',
-      redirecTo: '/'
+      icon: 'person-add-outline',
+      name: 'Agregar asistencia',
+      redirecTo: '/resalum'
+    },
+    {
+      icon: 'calendar',
+      name: 'Feriados',
+      redirecTo: '/api'
     },
   ];
   

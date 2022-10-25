@@ -11,38 +11,47 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="background">
-  <ion-card class="centrar">
-    <img src="assets/img/registroapplogov1chico.png">
-    </ion-card>
-  <ion-card class="background">
+<ion-content>
+  <ion-card>
     <ion-card-header>
       <ion-card-title>Registro</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-     <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+      <form [formGroup] = "formularioRegistro" (keyup.enter)="CrearUsuario()">
+
         <ion-item>
           <ion-label position="floating">Nombre</ion-label>
-          <ion-input formControlName="nombre"
-                     pattern="(?=.*[-!#$%&/()?¡_])(?=.*[A-Z])(?=.*[a-z])"></ion-input>
+          <ion-input type="text" formControlName="nombre"></ion-input>
         </ion-item>
+
         <ion-item>
-          <ion-label position="floating">Email</ion-label>
-          <ion-input formControlName="gmail"
-                     pattern="(?=.*[-!#$%&/()?¡_])(?=.*[A-Z])(?=.*[a-z])"></ion-input>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="text" formControlName="correo"></ion-input>
         </ion-item>
+
         <ion-item>
-          <ion-label position="floating">Contraseña</ion-label>
-          <ion-input formControlName="password" type="password"
-                     pattern="(?=.*[-!#$%&/()?¡_])(?=.*[A-Z])(?=.*[a-z])"></ion-input>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
         </ion-item>
+
         <ion-item>
-          <ion-label position="floating">Confirmar Contraseña</ion-label>
-          <ion-input formControlName="confirmacionPassword" type="password"
-                     pattern="(?=.*[-!#$%&/()?¡_])(?=.*[A-Z])(?=.*[a-z])"></ion-input>
+          <ion-label position="floating">Confirma Password</ion-label>
+          <ion-input type="password" formControlName="confirmaPass"></ion-input>
         </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Tipo de usuario</ion-label>
+          <br>
+            <br>
+            <select  type="text" formControlName="category">
+              <option value="Estudiante">Estudiante</option>
+              <option value="Profesor">Profesor</option>
+            </select>
+        </ion-item>
+        
         <br>
-        <ion-button (click)="guardar()">Registrarse
+        <ion-button (click)="CrearUsuario()" expand="block" fill="outline" shape="round" routerLink="/login">
+          Registrarse
         </ion-button>
       </form>
     </ion-card-content>
