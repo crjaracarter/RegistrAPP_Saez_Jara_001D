@@ -1,0 +1,11 @@
+# RegistrAPP_Saez_Jara_001D
+APLICACIONES A INSTALAR: INSTALAR STORAGE
+npm install --save @ionic/storage-angular
+
+ ENCARGO N2
+ 
+ THOMAS SAEZ
+ CRISTIAN JARA
+ 
+ SECCION 001D
+ 
