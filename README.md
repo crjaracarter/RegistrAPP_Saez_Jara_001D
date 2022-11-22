@@ -2,9 +2,9 @@
 Arreglos de entrega anterior, incorporacion de generador de Qr
 incorporar capacitor y inportar librerias complementarias de codebar.
 
-complemento de androi studio
+Complemento de android studio
 
-pasos completos
+Pasos completos:
 
 *incorporacion de android studio y capacitor*
 
