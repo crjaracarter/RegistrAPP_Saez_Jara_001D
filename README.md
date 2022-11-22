@@ -4,6 +4,11 @@ incorporar capacitor y inportar librerias complementarias de codebar.
 
 Aplicaciones adicionales:
 
+ npm install angularx-qrcode --save
+ npm install @capacitor-community/barcode-scanner
+ npm cap sync
+ ionic build
+
 
 
 +Complemento de android studio
