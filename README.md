@@ -1,4 +1,4 @@
-# EXPERIENCIA 3 - RegistrAPP_Saez_Jara_001D
+# ENTREGA ET - RegistrAPP_Saez_Jara_001D
 Arreglos de entrega anterior, incorporacion de generador de Qr
 incorporar capacitor y inportar librerias complementarias de codebar.
 
