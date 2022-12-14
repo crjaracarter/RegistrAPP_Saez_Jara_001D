@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { TomasistenciaPageRoutingModule } from './tomasistencia-routing.module';
 import { QRCodeModule } from 'angularx-qrcode';
 import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
-
+import { Camera, CameraResultType } from '@capacitor/camera';
 
 
 
@@ -34,6 +34,8 @@ const startScan = async () => {
   };
   
 };
+
+
 
 
 
